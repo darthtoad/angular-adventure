@@ -23,6 +23,7 @@ export class Game2Component implements OnInit {
     this.route.params.forEach((urlParameters) => {
       this.characterId = urlParameters['id'];
     })
+    this.location.replaceState("/ow");
     this.characterService.getCharacterById(this.characterId).subscribe(dataLastEmittedFromObserver => {
      this.currentCharacter = dataLastEmittedFromObserver;
     })

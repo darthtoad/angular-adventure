@@ -23,6 +23,7 @@ export class Game3Component implements OnInit {
     this.route.params.forEach((urlParameters) => {
       this.characterId = urlParameters['id'];
     })
+    this.location.replaceState("/oooooooh");
     this.characterService.getCharacterById(this.characterId).subscribe(dataLastEmittedFromObserver => {
      this.currentCharacter = dataLastEmittedFromObserver;
     })

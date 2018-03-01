@@ -10,6 +10,7 @@ export class Game4Component implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }
