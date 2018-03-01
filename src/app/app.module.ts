@@ -8,6 +8,7 @@ import { CharacterNewComponent } from './character-new/character-new.component';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { routing } from './app.routing';
+import { Game1Component } from './game-1/game-1.component';
 
 
 export const firebaseConfig = {
@@ -20,7 +21,8 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    CharacterNewComponent
+    CharacterNewComponent,
+    Game1Component
   ],
   imports: [
     BrowserModule,

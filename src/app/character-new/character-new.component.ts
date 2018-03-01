@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Character } from '../character.model';
 import { CharacterService } from '../character.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-character-new',
@@ -11,7 +12,9 @@ import { CharacterService } from '../character.service';
 
 export class CharacterNewComponent implements OnInit {
 
-  constructor(private characterService: CharacterService) { }
+  currentRoute: string = this.router.url;
+
+  constructor(private router: Router, private characterService: CharacterService) { }
 
   ngOnInit() {
   }
@@ -19,6 +22,7 @@ export class CharacterNewComponent implements OnInit {
   submitForm(newName: string, favoriteColor: string, sushi: boolean) {
     const newCharacter: Character = new Character(newName, favoriteColor, sushi);
     this.characterService.addCharacter(newCharacter);
+    this.router.navigate(['game/1']);
   }
 
 }
