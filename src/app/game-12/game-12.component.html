@@ -1,0 +1,34 @@
+<div *ngIf="currentCharacter?.favoriteColor === 'red'">
+  <p>A man wearing only a red Speedo comes up to you.</p>
+  <p>"Let me give you a ride," he says.</p>
+  <button (click)="goTo15()">Follow red speedo man</button>
+  <button (click)="goTo16()">Run away from red speedo man</button>
+</div>
+<div *ngIf="currentCharacter?.favoriteColor === 'yellow'">
+  <p>You see a bathroom. You really need to pee.</p>
+  <button (click)="goTo17()">Go to the bathroom</button>
+  <button (click)="goTo18()">Hold it in</button>
+</div>
+<div *ngIf="currentCharacter?.favoriteColor === 'green'">
+  <p>You find yourself in a cannabis club in Portland, OR. You remember who you are! Yay!</p>
+</div>
+<div *ngIf="currentCharacter?.favoriteColor === 'blue'">
+  <p>You are suddenly on a desert island. You see a boat and a trap door.</p>
+  <button (click)="goTo19()">Use the boat to leave the island</button>
+  <button (click)="goTo20()">Go through the trap door</button>
+</div>
+<div *ngIf="currentCharacter?.favoriteColor === 'pink'">
+  <p>Roger Waters magically appears.</p>
+  <p>"Would you like a cigarette?" he asks.</p>
+  <button (click)="goTo21()">Yes</button>
+  <button (click)="goTo22()">No</button>
+</div>
+<div *ngIf="currentCharacter?.favoriteColor === 'black'">
+  <p>Robert Smith magically appears.</p>
+  <p>"Would you like a cigarette?" he asks.</p>
+  <button (click)="goTo23()">Yes</button>
+  <button (click)="goTo24()">No</button>
+</div>
+<div *ngIf="currentCharacter?.favoriteColor === 'white'">
+  <p>A monster randomly eats you.</p>
+</div>

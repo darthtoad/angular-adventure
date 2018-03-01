@@ -7,6 +7,13 @@ import { Game4Component } from './game-4/game-4.component';
 import { Game5Component } from './game-5/game-5.component';
 import { Game6Component } from './game-6/game-6.component';
 import { Game7Component } from './game-7/game-7.component';
+import { Game8Component } from './game-8/game-8.component';
+import { Game9Component } from './game-9/game-9.component';
+import { Game10Component } from './game-10/game-10.component';
+import { Game11Component } from './game-11/game-11.component';
+import { Game12Component } from './game-12/game-12.component';
+import { Game13Component } from './game-13/game-13.component';
+import { Game14Component } from './game-14/game-14.component';
 import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -46,6 +53,34 @@ const appRoutes: Routes = [
   {
     path: 'character/:id/game/7',
     component: Game7Component
+  },
+  {
+    path: 'character/:id/game/8',
+    component: Game8Component
+  },
+  {
+    path: 'character/:id/game/9',
+    component: Game9Component
+  },
+  {
+    path: 'character/:id/game/10',
+    component: Game10Component
+  },
+  {
+    path: 'character/:id/game/11',
+    component: Game11Component
+  },
+  {
+    path: 'character/:id/game/12',
+    component: Game12Component
+  },
+  {
+    path: 'character/:id/game/13',
+    component: Game13Component
+  },
+  {
+    path: 'character/:id/game/14',
+    component: Game14Component
   }
 ];
 
