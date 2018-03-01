@@ -11,7 +11,12 @@ export class CharacterService {
   }
 
   addCharacter(newCharacter: Character) {
-    this.characters.push(newCharacter);
+    const character = this.characters.push(newCharacter);
+    return character.key;
+  }
+
+  getCharacterById(characterId: string) {
+    return this.database.object('characters/' + characterId);
   }
 
 }

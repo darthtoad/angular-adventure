@@ -19,10 +19,11 @@ export class CharacterNewComponent implements OnInit {
   ngOnInit() {
   }
 
-  submitForm(newName: string, favoriteColor: string, sushi: boolean) {
-    const newCharacter: Character = new Character(newName, favoriteColor, sushi);
-    this.characterService.addCharacter(newCharacter);
-    this.router.navigate(['game/1']);
+  submitForm(newName: string, favoriteColor: string, sushi: string) {
+    const newCharacter: Character = new Character(newName, favoriteColor.toLowerCase(), sushi);
+    const characterKey: string = this.characterService.addCharacter(newCharacter);
+
+    this.router.navigate(['character/' + characterKey + '/game/1']);
   }
 
 }

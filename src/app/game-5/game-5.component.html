@@ -1,0 +1,9 @@
+<p>An Ogre with a shirt feature the Angular logo comes up to you. "Do you like sushi", he asks.</p>
+
+<div *ngIf="currentCharacter?.sushi === 'Yes'">
+  <p>You respond affirmatively. The Ogre says, "Let me give you a bento." You begin to eat and there's a key inside the bento. You take the key. The Ogre tells you, "Continue through this door."</p>
+  <button (click)="goTo8()">Open the door with the key and continue</button>
+</div>
+<div *ngIf="currentCharacter?.sushi === 'No'">
+  <p>You respond negatively. The Ogre says, "You don't like sushi? Then you shall remain in this room until you starve to death." There is no way out. Eventually, you die of starvation.</p>
+</div>

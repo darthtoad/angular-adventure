@@ -1,3 +1,18 @@
-<p>
-  game-1 works!
-</p>
+<h1>Welcome to Angular Adventure!</h1>
+
+<p [class]="currentCharacter?.favoriteColor"> Your name is {{currentCharacter?.name}}.</p>
+
+<div *ngIf="currentCharacter?.sushi === 'Yes'">
+  You like sushi.
+</div>
+<div *ngIf="currentCharacter?.sushi === 'No'">
+  You don't like sushi.
+</div>
+
+<p>You are in a room. You have no idea how you ended up there, and you have no idea who you are besides your name, favorite color, and whether you like sushi.</p>
+
+<p>In this room is a table with a key and a strange object.</p>
+
+<button (click)="goTo2()">Pick up the key</button>
+<br>
+<button (click)="goTo3()">Pick up the strange object</button>
