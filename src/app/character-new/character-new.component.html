@@ -21,11 +21,9 @@
     </select>
     <br>
     <label>Do You Like Sushi?</label>
-      <input type="radio" value="true" #sushi>Yes  </input>
-      <input type="radio" value="false" #sushi>No</input>
+      <input type="radio" value="true" #sushi>Yes
+      <input type="radio" value="false" #sushi>No
     <br>
-    <input #newUserName>
-    <br>
-    <button (click)="submitForm(newName.value, favoriteColor.value, sushi.value); newPostName.value=''; favoriteColor.value=''; sushi.value='';">Add New Listing</button>
+    <button (click)="submitForm(newName.value, favoriteColor.value, sushi.value); newPostName.value=''; favoriteColor.value=''; sushi.value='';">Create Character</button>
   </div>
 </div>

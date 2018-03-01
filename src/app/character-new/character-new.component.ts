@@ -5,11 +5,13 @@ import { CharacterService } from '../character.service';
 @Component({
   selector: 'app-character-new',
   templateUrl: './character-new.component.html',
-  styleUrls: ['./character-new.component.css']
+  styleUrls: ['./character-new.component.css'],
+  providers: [CharacterService]
 })
+
 export class CharacterNewComponent implements OnInit {
 
-  constructor() { }
+  constructor(private characterService: CharacterService) { }
 
   ngOnInit() {
   }
